@@ -5,17 +5,17 @@ export default function About() {
     <section id="about">
       <div className=" container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+          <h1 className="title-font sm:text-5xl text-3xl mb-4 font-medium text-white">
             Hi, I'm Ahmed
             <br className="hidden lg:inline-block" /> I love building amazing
             websites.
           </h1>
-          <p className="mb-8 leading-relaxed">
+          <p className="mb-8 leading-relaxed py-5">
             An ambitious developer who’s passionate about learning Front-End web
             development new technologies and eager to refine my coding and
             debugging skills.
           </p>
-          <div className="flex justify-center">
+          <div className="flex">
             <a
               href="#contact"
               className="inline-flex text-white bg-impreza-orange border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
