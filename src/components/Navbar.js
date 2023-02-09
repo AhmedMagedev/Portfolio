@@ -22,7 +22,7 @@ export default function Navbar() {
           </a> */}
         </nav>
         <a
-          href="#contact"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmedmagedev@gmail.com"
           className="inline-flex items-center bg-impreza-gray border-0 py-1 px-3 focus:outline-none hover:bg-impreza-orange hover:text-gray-900 rounded text-base mt-4 md:mt-0"
         >
           Hire Me

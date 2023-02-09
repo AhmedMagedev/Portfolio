@@ -17,7 +17,7 @@ export default function About() {
           </p>
           <div className="flex">
             <a
-              href="#contact"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmedmagedev@gmail.com"
               className="inline-flex text-white bg-impreza-orange border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
             >
               Work With Me
