@@ -12,7 +12,7 @@ export default function About() {
          <a href="https://www.linkedin.com/in/ahmedmagedev">
             <FaLinkedin className="text-impreza-orange w-6 h-6 flex-shrink-0 mr-4" />
          </a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmedmagedev@gmail.com">
+            <a href="mailto:ahmedmagedev@gmail.com">
                 <MdOutlineMail className="text-impreza-orange w-6 h-6 flex-shrink-0 mr-4" />
             </a>
          </div>
