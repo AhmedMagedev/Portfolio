@@ -8,7 +8,7 @@ import Testmonials from "./components/Testmonials";
 
 export default function App() {
   return (
-    <main className="text-gray-400 bg-impreza-gray body-font">
+    <main className="text-gray-400 bg-impreza-dark body-font">
       <Navbar />
       <About />
       <Projects />

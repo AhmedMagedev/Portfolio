@@ -9,7 +9,7 @@ import {
   SiGraphql,
   SiMongodb,
   SiWordpress,
-  SiGithub,
+  SiGithub,rk
 } from "react-icons/si";
 
 export default function Skills() {
@@ -24,13 +24,13 @@ export default function Skills() {
         </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
           <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-impreza-dark rounded flex p-4 h-full items-center">
+            <div className="bg-impreza-gray rounded flex p-4 h-full items-center">
               <FaReact className="text-impreza-orange w-6 h-6 flex-shrink-0 mr-4" />
               <span className="title-font font-medium text-white">React</span>
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-impreza-dark rounded flex p-4 h-full items-center">
+            <div className="bg-impreza-gray rounded flex p-4 h-full items-center">
               <SiFirebase className="text-impreza-orange w-6 h-6 flex-shrink-0 mr-4" />
               <span className="title-font font-medium text-white">
                 Firebase
@@ -38,7 +38,7 @@ export default function Skills() {
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-impreza-dark rounded flex p-4 h-full items-center">
+            <div className="bg-impreza-gray rounded flex p-4 h-full items-center">
               <SiTailwindcss className="text-impreza-orange w-6 h-6 flex-shrink-0 mr-4" />
               <span className="title-font font-medium text-white">
                 Tailwind css
@@ -46,25 +46,25 @@ export default function Skills() {
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-impreza-dark rounded flex p-4 h-full items-center">
+            <div className="bg-impreza-gray rounded flex p-4 h-full items-center">
               <SiNextdotjs className="text-impreza-orange w-6 h-6 flex-shrink-0 mr-4" />
               <span className="title-font font-medium text-white">Next.js</span>
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-impreza-dark rounded flex p-4 h-full items-center">
+            <div className="bg-impreza-gray rounded flex p-4 h-full items-center">
               <SiGraphql className="text-impreza-orange w-6 h-6 flex-shrink-0 mr-4" />
               <span className="title-font font-medium text-white">GraphQl</span>
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-impreza-dark rounded flex p-4 h-full items-center">
+            <div className="bg-impreza-gray rounded flex p-4 h-full items-center">
               <SiMongodb className="text-impreza-orange w-6 h-6 flex-shrink-0 mr-4" />
               <span className="title-font font-medium text-white">Mongodb</span>
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-impreza-dark rounded flex p-4 h-full items-center">
+            <div className="bg-impreza-gray rounded flex p-4 h-full items-center">
               <SiWordpress className="text-impreza-orange w-6 h-6 flex-shrink-0 mr-4" />
               <span className="title-font font-medium text-white">
                 Wordpress
@@ -72,7 +72,7 @@ export default function Skills() {
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-impreza-dark rounded flex p-4 h-full items-center">
+            <div className="bg-impreza-gray rounded flex p-4 h-full items-center">
               <SiGithub className="text-impreza-orange w-6 h-6 flex-shrink-0 mr-4" />
               <span className="title-font font-medium text-white">Github</span>
             </div>

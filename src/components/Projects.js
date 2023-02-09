@@ -4,7 +4,7 @@ import { projects } from "../data";
 
 export default function Projects() {
   return (
-    <section id="projects" className="text-gray-400 bg-impreza-gray body-font pb-10">
+    <section id="projects" className="text-gray-400body-font pb-10">
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-20">
           <CodeIcon className="mx-auto inline-block w-10 mb-4" />
@@ -25,7 +25,7 @@ export default function Projects() {
                   className="absolute inset-0 w-full h-full object-cover object-center"
                   src={project.image}
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-impreza-gray opacity-0 hover:opacity-100">
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-orange-800 bg-impreza-gray opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text:sm title-font font-medium text-impreza-orange mb-1">
                     {project.subtitle}
                   </h2>
