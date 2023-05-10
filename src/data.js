@@ -5,7 +5,7 @@ export const projects = [
     description:
       "An entertainment providers aggregator that collects information about every entertainment location in Egypt to help people explore the hidden gems of our country",
     image: "./khroga.gif",
-    link: "",
+    link: "https://hangout-beta.vercel.app/",
   },
   {
     title: "Target Canidian Immigration Services",
