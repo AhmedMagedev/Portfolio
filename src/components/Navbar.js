@@ -1,9 +1,9 @@
-import { ArrowRightIcon } from "@heroicons/react/solid";
-import React from "react";
+import { ArrowRightIcon } from '@heroicons/react/solid';
+import React from 'react';
 
 export default function Navbar() {
   return (
-    <header className=" bg-impreza-dark md:sticky top-0 z-10">
+    <header className=" bg-dark md:sticky top-0 z-50">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <a className="title-font font-medium text-white mb-4 md:mb-0">
           <a href="#about" className="ml-3 text-xl">
@@ -23,7 +23,7 @@ export default function Navbar() {
         </nav>
         <a
           href="mailto:ahmedmagedev@gmail.com"
-          className="inline-flex items-center bg-impreza-gray border-0 py-1 px-3 focus:outline-none hover:bg-impreza-orange hover:text-gray-900 rounded text-base mt-4 md:mt-0"
+          className="inline-flex items-center bg-secondary border-0 py-1 px-3 focus:outline-none hover:bg-accent hover:text-white rounded text-base mt-4 md:mt-0"
         >
           Hire Me
           <ArrowRightIcon className="w-4 h-4 ml-1" />

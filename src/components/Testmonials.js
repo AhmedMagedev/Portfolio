@@ -1,6 +1,6 @@
-import React from "react";
-import { TerminalIcon, UsersIcon } from "@heroicons/react/solid";
-import { testimonials } from "../data";
+import React from 'react';
+import { TerminalIcon, UsersIcon } from '@heroicons/react/solid';
+import { testimonials } from '../data';
 
 export default function Testimonials() {
   return (
@@ -13,7 +13,7 @@ export default function Testimonials() {
         <div className="flex flex-wrap m-4">
           {testimonials.map((testimonial) => (
             <div className="p-4 md:w-1/2 w-full">
-              <div className="h-full bg-impreza-dark bg-opacity-40 p-8 rounded">
+              <div className="h-full bg-dark bg-opacity-40 p-8 rounded">
                 <TerminalIcon className="block w-8 text-gray-500 mb-4" />
                 <p className="leading-relaxed mb-6">{testimonial.quote}</p>
                 <div className="inline-flex items-center">

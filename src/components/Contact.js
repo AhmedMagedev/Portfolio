@@ -1,26 +1,26 @@
-import React from "react";
+import React from 'react';
 
 export default function Contact() {
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [message, setMessage] = React.useState("");
+  const [name, setName] = React.useState('');
+  const [email, setEmail] = React.useState('');
+  const [message, setMessage] = React.useState('');
 
   function encode(data) {
     return Object.keys(data)
       .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+        (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
       )
-      .join("&");
+      .join('&');
   }
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', name, email, message }),
     })
-      .then(() => alert("Message sent!"))
+      .then(() => alert('Message sent!'))
       .catch((error) => alert(error));
   }
   return (
@@ -35,10 +35,10 @@ export default function Contact() {
             frameBorder={0}
             marginHeight={0}
             marginWidth={0}
-            style={{ filter: "opacity(0.7)" }}
+            style={{ filter: 'opacity(0.7)' }}
             src="https://www.google.com/maps/embed/v1/place?q=zahraa+maadi&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
-          <div className="bg-impreza-dark relative flex flex-wrap py-6 px-8 rounded shadow-md">
+          <div className="bg-dark relative flex flex-wrap py-6 px-8 rounded shadow-md">
             <div className="lg:w-1/2 px-6">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 ADDRESS
@@ -80,7 +80,7 @@ export default function Contact() {
               type="text"
               id="name"
               name="name"
-              className="w-full bg-impreza-dark rounded border border-gray-700 focus:border-impreza-orange focus:ring-2 focus:ring-red-800 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-dark rounded border border-gray-700 focus:border-impreza-orange focus:ring-2 focus:ring-red-800 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="relative mb-4">
@@ -91,7 +91,7 @@ export default function Contact() {
               type="email"
               id="email"
               name="email"
-              className="w-full bg-impreza-dark rounded border border-gray-700 focus:border-impreza-orange focus:ring-2 focus:ring-red-800 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-dark rounded border border-gray-700 focus:border-impreza-orange focus:ring-2 focus:ring-red-800 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="relative mb-4">
@@ -104,7 +104,7 @@ export default function Contact() {
             <textarea
               id="message"
               name="message"
-              className="w-full bg-impreza-dark rounded border border-gray-700 focus:border-impreza-orange focus:ring-2 focus:ring-red-800 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              className="w-full bg-dark rounded border border-gray-700 focus:border-impreza-orange focus:ring-2 focus:ring-red-800 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
             />
           </div>
           <button
