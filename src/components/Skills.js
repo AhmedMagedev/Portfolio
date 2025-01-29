@@ -1,6 +1,7 @@
 import React from 'react';
-import { skills } from '../data';
-import { BadgeCheckIcon, ChipIcon } from '@heroicons/react/solid';
+// import { skills } from '../data';
+// import { BadgeCheckIcon } from '@heroicons/react/solid';
+import { ChipIcon } from '@heroicons/react/solid';
 import { FaReact } from 'react-icons/fa';
 import {
   SiFirebase,

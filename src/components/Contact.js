@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Contact() {
-  const [name, setName] = React.useState('');
-  const [email, setEmail] = React.useState('');
-  const [message, setMessage] = React.useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   function encode(data) {
     return Object.keys(data)
@@ -13,7 +13,7 @@ export default function Contact() {
       .join('&');
   }
 
-  function handleSubmit(e) {
+  const handleSubmit = (e) => {
     e.preventDefault();
     fetch('/', {
       method: 'POST',
@@ -22,7 +22,8 @@ export default function Contact() {
     })
       .then(() => alert('Message sent!'))
       .catch((error) => alert(error));
-  }
+  };
+
   return (
     <section id="contact" className="relative">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
@@ -52,7 +53,10 @@ export default function Contact() {
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
               </h2>
-              <a className="text-indigo-500 leading-relaxed">
+              <a
+                href="mailto:ahmedmagedev@gmail.com"
+                className="text-indigo-500 leading-relaxed"
+              >
                 ahmedmagedev@gmail.com
               </a>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
@@ -66,6 +70,7 @@ export default function Contact() {
         <form
           netlify
           name="contact"
+          onSubmit={handleSubmit}
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
         >
           <h2 className="text-white sm:text-4xl text-3xl mb-5 font-medium title-font">
@@ -80,6 +85,8 @@ export default function Contact() {
               type="text"
               id="name"
               name="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               className="w-full bg-dark rounded border border-gray-700 focus:border-impreza-orange focus:ring-2 focus:ring-red-800 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
@@ -91,6 +98,8 @@ export default function Contact() {
               type="email"
               id="email"
               name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="w-full bg-dark rounded border border-gray-700 focus:border-impreza-orange focus:ring-2 focus:ring-red-800 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
@@ -104,6 +113,8 @@ export default function Contact() {
             <textarea
               id="message"
               name="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               className="w-full bg-dark rounded border border-gray-700 focus:border-impreza-orange focus:ring-2 focus:ring-red-800 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
             />
           </div>
