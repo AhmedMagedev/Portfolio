@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" fill="none">
+  <rect width="180" height="180" rx="40" fill="#c4654a"/>
+  <text
+    x="90"
+    y="118"
+    text-anchor="middle"
+    fill="#ffffff"
+    font-family="ui-sans-serif, system-ui, sans-serif"
+    font-size="72"
+    font-weight="600"
+    letter-spacing="-2"
+  >AM</text>
+</svg>
